@@ -7,6 +7,16 @@ step3: npm start
 # Unit tests
 npm test  
 
+# paths: 
+Success route: 
+step1: http://localhost:3000
+step2: http://localhost:3000/Create  
+step3: http://localhost:3000/Success  
+
+Deny route: 
+step1: http://localhost:3000  
+step2: http://localhost:3000/Sorry 
+
 # Dependancies
 node, react, port 3000, redux, MaterialUI and jest. I've tested on a macOs and a windows machine.      
 
