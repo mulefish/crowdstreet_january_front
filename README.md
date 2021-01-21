@@ -59,3 +59,7 @@ See validateInputs() in the components/LandingPage.jsx files and in components/u
 # The images
 Via https://www.iconpacks.net/free-icon/rocket-1206.html or https://thenounproject.com/term/dead-fish/21632/      
 Fish image is from Matt Brooks of thenounproject    
+
+# Some screen caps
+![Screen1](screen1.png)
+
