@@ -8,12 +8,12 @@ step3: npm start
 npm test  
 
 # paths: 
-Success route: 
+Success route:   
 step1: http://localhost:3000
 step2: http://localhost:3000/Create  
 step3: http://localhost:3000/Success  
-
-Deny route: 
+  
+Deny route:   
 step1: http://localhost:3000  
 step2: http://localhost:3000/Sorry 
 
