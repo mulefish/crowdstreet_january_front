@@ -9,9 +9,9 @@ npm test
 
 # paths: 
 Success route:   
-step1: http://localhost:3000
-step2: http://localhost:3000/Create  
-step3: http://localhost:3000/Success  
+step1: http://localhost:3000  
+step2: http://localhost:3000/Create   
+step3: http://localhost:3000/Success   
   
 Deny route:   
 step1: http://localhost:3000  
