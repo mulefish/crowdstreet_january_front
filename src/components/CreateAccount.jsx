@@ -19,18 +19,6 @@ const NILL = "" // I one man war again quote marks
 
 export default function Contact(props) {
 
-  // const count = useSelector((state) => state.count)
-  // const investment = useSelector((state) => state.investment)
-  // const amount = useSelector((state) => state.amount)
-  // const credit = useSelector((state) => state.credit)
-  // const income = useSelector((state) => state.income)
-  // const determination = useSelector((state) => state.determination)
-  // const firstname = useSelector((state) => state.firstname)
-  // const lastname = useSelector((state) => state.lastname)
-  // const reason = useSelector((state) => state.reason)
-
-
-
   const [warningfirstname, setWarningFirstname] = useState("");
   const [warninglastname, setWarningLastname] = useState("");
   const [warningEmail, setWarningEmail] = useState("");
@@ -59,9 +47,6 @@ export default function Contact(props) {
     let email = document.getElementById("email").value.trim();
     let password = document.getElementById("password").value.trim();
     let password2 = document.getElementById("password2").value.trim();
-
-
-
 
     if (firstname.length > 0) {
       setWarningFirstname(NILL)
@@ -105,13 +90,11 @@ export default function Contact(props) {
 
     if (isOk) {
 
-
       dispatch({
         type: ACTIONS.RESET_RANDOM,
         random: Math.random()
       })
     
-
       dispatch({
         type: ACTIONS.SET_FIRST_NAME,
         firstname: firstname

@@ -121,4 +121,3 @@ it("sad path - a bad password", () => {
     const result = isPasswordGoodEnough('thisisjustletters')
     expect(result).toBe(false)
 })
-

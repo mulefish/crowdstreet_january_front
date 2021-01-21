@@ -9,4 +9,3 @@ export default function SorryInit() {
     </React.Fragment>
   );
 }
-

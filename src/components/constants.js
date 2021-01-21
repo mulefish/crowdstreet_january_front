@@ -32,13 +32,11 @@ export function getI8N() {
         'password_too_simple':'Needs 9+ chars w/ a number or special char',
         'passwords_mismatch':'Passwords mismatch',
         'email_illformed':'The candidate email is illformed',
-    
     } 
     return english
 } 
 
 export function getStyle() { 
-
 
     const useStyles = makeStyles((theme) => ({
         firstBox: {

@@ -1,7 +1,6 @@
 import { createStore } from 'redux';
 
 export const ACTIONS = {
-  ADD_ONE: 'ADD_ONE', // TODO: Remove
   SET_DETERMINATION:'SET_DETERMINATION',
   SET_INVESTMENT: 'SET_INVESTMENT',
   SET_AMOUNT: 'SET_AMOUNT',
@@ -12,7 +11,6 @@ export const ACTIONS = {
   SET_LAST_NAME: 'SET_LAST_NAME',
   SET_REASON:'SET_REASON', 
   RESET_RANDOM:'RESET_RANDOM', 
-
 };
 
 const initialState = {
@@ -26,7 +24,6 @@ const initialState = {
   firstname: 'TBD',
   lastname: 'TBD',
   random:'unset'
-
 };
 
 function theReducer(state = initialState, action) {
@@ -36,7 +33,6 @@ function theReducer(state = initialState, action) {
         ...state, 
         random: action['random']
       }
-
     }
     case ACTIONS.SET_REASON: { 
       return {
@@ -69,13 +65,6 @@ function theReducer(state = initialState, action) {
         amount: action['amount'],
         credit: action['credit'],
         income: action['income']
-      }
-    }
-    case ACTIONS.ADD_ONE: {
-      const { count } = state;
-      return {
-        ...state,
-        count: count + 1
       }
     }
     case ACTIONS.SET_INVESTMENT: {

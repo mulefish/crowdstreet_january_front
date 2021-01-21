@@ -12,7 +12,6 @@ export function isOnlyWholePositiveNumbers(candidateString) {
     // $100 = false
     // -100 = false
     // 100 = true
-
     return /^\d+$/.test(candidateString);
 
 }
@@ -105,3 +104,4 @@ export const capitalize_first_name = (firstName) => {
         return 'Candidate'
     }
   }
+  
