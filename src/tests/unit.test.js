@@ -25,7 +25,6 @@ it("happy path - but the invest amount is right on the cusp ( but is ok )", asyn
 	const item = {"determination": true, "reason": "Granted!"}
 	await expect(fake_restful_call(invest, networth, credit, income)).resolves.toEqual(item);
 })
- 
 
 it("sad path - the invest amount is just over the cusp", async () => {
     const income = 100000000
@@ -36,7 +35,6 @@ it("sad path - the invest amount is just over the cusp", async () => {
 	const item = {"determination": false, "reason": "Bad Request"}
 	await expect(fake_restful_call(invest, networth, credit, income)).resolves.toEqual(item);
 })
-
 
 it("sad path - too little income", async () => {
     const income = 1000
@@ -103,6 +101,7 @@ it("happy path - Give unicode", () => {
         expect(true).toBe(true)
     }
 })
+
 it("happy path - some good passwords", () => {
     // Looking for at least one special char or number
     const result1 = isPasswordGoodEnough('1234567890')
@@ -113,8 +112,6 @@ it("happy path - some good passwords", () => {
     const isOk = true == result1 == result2 == result3 == result4
 
     expect(isOk).toBe(true)
-
-
 })
 
 it("sad path - a bad password", () => {
